@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Accordion Slider</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+.accordion {
+    -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+    -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+    box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: #505050;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 30px;
+    margin: 0 auto;
+    height: 460px;
+    width: 1337px;
+}
+
+.accordion > ul > li,
+.accordion-title,
+.accordion-content,
+.accordion-separator {
+    float: left;
+}
+
+.accordion > ul > li {
+    background-color: #1f1f1f;
+    margin-right: -980px;
+    margin-bottom: -0px;
+}
+
+.accordion-select:checked ~ .accordion-separator {
+    margin-right: 980px;
+    margin-bottom: 0px;
+}
+
+.accordion-title,
+.accordion-select  {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    width: 50px;
+    height: 460px;
+    font-size: 23px;
+}
+
+.accordion-title span {
+    margin-bottom: 25px; 
+    margin-left: 20px;
+}
+
+.accordion-select:hover ~ .accordion-title,
+.accordion-select:checked ~ .accordion-title {
+    background-color: #3068cc;
+}
+
+.accordion-title span  {	
+    transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-writing-mode: lr-bt;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    margin-left: 0px;
+    line-height: 50px;
+}
+
+.accordion-content {
+    background-color: #3e3e3e;
+    color: #f5f2f0;
+    height: 382px;
+    width: 902px;
+    padding: 39px;
+}
+
+.accordion-title,
+.accordion-select:checked ~ .accordion-content {
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+.accordion {
+    overflow: hidden;
+}
+
+.accordion > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 101%;
+}
+
+.accordion > ul > li,
+.accordion-title {
+    position: relative;
+}
+
+.accordion-select {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.accordion-title span {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.accordion-content {
+    position: relative;
+    overflow: auto;
+}
+
+.accordion-separator {
+    transition: margin 0.3s ease 0.1s;
+    -o-transition: margin 0.3s ease 0.1s;
+    -moz-transition: margin 0.3s ease 0.1s;
+    -webkit-transition: margin 0.3s ease 0.1s;
+}
+</style>
+</head>
+<body>
+<div class="accordion">
+    <ul>
+        <li>
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title">
+                <span>Breaking Free</span>
+            </div>
+            <div class="accordion-content">
+                <span class="image"></span>
+                   
+                
+                <a href="https://www.inc.com/logan-chierotti/5-ways-to-kick-your-technology-addiction.html">
+                    <img src="images/image1.jpg" alt="" />
+                   
+                    <div class="content">
+                        
+                    
+                </a>
+            </div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title">
+                <span>Regaining Control</span>
+            </div>
+            <div class="accordion-content">
+                <span class="image"></span>
+                    
+                
+                <a href="https://experiencelife.com/article/how-to-break-free-of-tech-addiction/">
+                    <img src="images/image2.jpg" alt="" />
+                    
+                    <div class="content">
+                       
+                    
+                </a>
+            </div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title">
+                <span>Understanding the beast</span>
+            </div>
+            <div class="accordion-content">
+                <span class="image"></span>
+                   
+                
+                <a href="https://www.wired.com/story/its-time-for-a-serious-talk-about-the-science-of-tech-addiction/">
+                    <img src="images/image3.jpg" alt="" />
+                    
+                    <div class="content">
+                        
+                    
+                </a>
+            </div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title">
+                <span>The (Weird) New Trend</span>
+            </div>
+            <div class="accordion-content">
+                <span class="image"></span>
+                    
+               
+                <a href="https://www.outsideonline.com/2336521/why-tech-generation-needs-wilderness-therapy">
+                    <img src="images/image4.jpg" alt="" />
+                   
+                    <div class="content">
+                        
+                    
+                </a>
+            </div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title">
+                <span>The Tech Giants</span>
+            </div>
+            <div class="accordion-content">
+                <span class="image"></span>
+                    
+                
+                <a href="https://www.yesmagazine.org/happiness/the-people-behind-your-tech-addiction-are-now-trying-to-curb-it-20180628">
+                    <img src="images/image5.jpg" alt="" />
+                   
+                    <div class="content">
+                        
+                    
+                </a>
+            </div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title">
+                <span>Disconnect</span>
+            </div>
+            <div class="accordion-content">
+                <span class="image"></span>
+                   
+                
+                <a href="http://socialnerdia.com/blog/2009/5/12/5-reasons-to-disconnect-and-live-more-of-life-offline.html">
+                    <img src="images/image6.jpg" alt="" />
+                    
+                    <div class="content">
+                     
+                   
+                </a>
+            </div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title">
+                <span>Trivia</span>
+            </div>
+            <div class="accordion-content">
+                <span class="image"></span>
+                    
+                
+                <a href="https://digitalsynopsis.com/design/this-generation-technology-internet-addiction-posters/">
+                   <img src="images/image7.jpg" alt="" />
+                    
+                    <div class="content">
+                      
+                    
+                </a>
+            </div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
+                

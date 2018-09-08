@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Quality of Life</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-1.8.3.js"
+    
+  ></script>
+  <style type="text/css">
+    form {
+border:5px solid #000000; 
+background-color:#FFC;
+padding: 12px;}
+
+input {color: #005588; font-weight:bold}
+
+h1,h2, p {margin-bottom:26px}
+
+  </style>
+ 
+
+  <script type="text/javascript">
+
+
+    $(window).load(function(){
+      
+function calcscore() {
+    var score = 0;
+    $(".calc:checked").each(function() {
+        score += parseInt($(this).val(), 10);
+    });
+    $("input[name=sum]").val(score)
+}
+$().ready(function() {
+    $(".calc").change(function() {
+        calcscore()
+    });
+});
+
+    });
+
+</script>
+
+</head>
+<body>
+  
+<h1>Quality of Life</h1>
+<form action="">
+<h2>Sample Questionnaire</h2>
+<p><strong>1. When I use my smartphone, laptop, or tablet, I spend more time with it than I had intended.
+  </strong><br>
+Never or Rarely
+<input class="calc" type="radio" name="radio1" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio1" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio1" value="2"></p>
+<p><strong>2. I enjoy interacting online more than I do with my romantic partner. </strong><br>
+Never or Rarely
+<input class="calc" type="radio" name="radio2" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio2" value="2">
+Often or Regularly
+<input class="calc" type="radio" name="radio2" value="4"></p>
+<p><strong>3. I’d rather spend time online than doing things around the house.
+  </strong><br>
+Never or Rarely
+<input class="calc" type="radio" name="radio3" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio3" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio3" value="2"></p>
+
+<p><strong>4. I feel that the quality of my work or school work has suffered due to the amount of time I spend online.
+  </strong><br>
+Never or Rarely
+<input class="calc" type="radio" name="radio4" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio4" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio4" value="2"></p>
+
+
+<p><strong>5. Friends and family have complained about the amount of time I spend in front of my smartphone, tablet, or laptop.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio5" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio5" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio5" value="2"></p>
+<p><strong>6. When asked what I do online, I prefer not to say.
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio6" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio6" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio6" value="2"></p>
+<p><strong>7. Because of the amount of time I spend online, I am not as productive or attentive in my work or school work than I normally would be.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio7" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio7" value="2">
+Often or Regularly
+<input class="calc" type="radio" name="radio7" value="4"></p>
+<p><strong>8. I check my social media (Facebook, Instagram, etc.), texts, or emails first, before I get down to work or school work.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio8" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio8" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio8" value="2"></p>
+<p><strong>9. I don’t like it when people bother me when I’m in front of my smartphone, laptop, or tablet.
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio9" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio9" value="2">
+Often or Regularly
+<input class="calc" type="radio" name="radio9" value="4"></p>
+<p><strong>10. I’m anxious when I’m separated from my smartphone, tablet, or laptop for any extended period of time.
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio10" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio10" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio10" value="2"></p>
+<p><strong>11. I escape from my real life for what I can find and do online.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio11" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio11" value="2">
+Often or Regularly
+<input class="calc" type="radio" name="radio11" value="4"></p>
+<p><strong>12. My life would be a lot less interesting and happy without access to the Internet.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio12" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio12" value="2">
+Often or Regularly
+<input class="calc" type="radio" name="radio12" value="4"></p>
+<p><strong>13. I put off doing something else by spending more time than I had intended online.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio13" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio13" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio13" value="2"></p>
+<p><strong>14. When at work, home, or school and my smartphone is off or out of reach, I spend a lot of time thinking about what I’m missing out on.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio14" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio14" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio14" value="2"></p>
+<p><strong>15. I often stay up later at night than I had intended due to doing things online.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio15" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio15" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio15" value="2"></p>
+<p><strong>16. I’d rather stay home gaming, doing social media, or otherwise spending time online than go out with my friends.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio16" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio16" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio16" value="2"></p>
+<p><strong>17. I’ve tried to cut back on my smartphone, tablet, or laptop use not related to work or school work without success.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio17" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio17" value="2">
+Often or Regularly
+<input class="calc" type="radio" name="radio17" value="4"></p>
+<p><strong>18. When I’m not checking my smartphone, I fear missing out with what’s going on, which often makes me unhappy.
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio18" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio18" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio18" value="2"></p>
+<p><strong>19. I can't seem to sleep as much as I want to, because I'm online late into the night
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio19" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio19" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio19" value="2"></p>
+<p><strong>20. My smartphone is ON and beneath my pillow, or at arm's length when I sleep.
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio20" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio20" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio20" value="2"></p>
+<p><strong>21. The first thing I do when I wake up is to check my smartphone.
+
+  </strong><br>
+  Never or Rarely
+<input class="calc" type="radio" name="radio21" value="0">
+Sometimes
+<input class="calc" type="radio" name="radio21" value="1">
+Often or Regularly
+<input class="calc" type="radio" name="radio21" value="2"></p>
+<p><strong>22. It is easier for me to express myself online than in real life.
+
+  </strong><br>
+Yes
+<input class="calc" type="radio" name="radio22" value="0">
+No
+<input class="calc" type="radio" name="radio22" value="5"></p>
+<p><strong>23. I have found online friends who are more close to me than any of my real life friends
+  </strong><br>
+Yes
+<input class="calc" type="radio" name="radio23" value="0">
+No
+<input class="calc" type="radio" name="radio23" value="5">
+</p>
+<p><strong>24. I feel a soothing numbness whenever I'm online
+  </strong><br>
+Yes
+<input class="calc" type="radio" name="radio24" value="0">
+No
+<input class="calc" type="radio" name="radio24" value="5">
+</p>
+<p><strong>25. I find my online life to be more meaningful than my real life.
+  </strong><br>
+Yes
+<input class="calc" type="radio" name="radio25" value="0">
+No
+<input class="calc" type="radio" name="radio25" value="5">
+</p>
+
+<p>Total  Score:
+<input type="text" name="sum">
+</p>
+</form>
+</body>
+</html>
+
+  

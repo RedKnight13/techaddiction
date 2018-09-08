@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ./head %>    
+</head>
+<body>
+    <header>
+      <% include ./header %>
+    </header>
+    
+      <div class="container-fluid">
+        <div class="row">
+                   
+                <div class="col-lg-2">
+                        <nav style="background-color:#cbeaf1;align-content: center;">
+                          <h4 style="font-weight:bolder"><p  style="text-align:center;color: #005d72;">Training Programs</p></h4> 
+                          <ul class="nav nav-divibar nav-stacked"  >                           
+
+                              <%  for (var image of images_pgms) { %>
+                                  <li style="text-align:center"><img class="img1p" src=<%=image.link%> width=80px height=80px>
+                                    <br /><%=image.title%></li>
+                              <% } %>                              
+                            
+                          </ul>
+                        </nav>
+                      </div>
+              
+          
+          <div class="col-lg-8" style="display:table-cell; vertical-align:middle; text-align:center">
+            <!--  <div class="media">
+                    <div class="media-left media-middle" >
+                            <a href="#" >-->
+                              <h2 class="media-heading" style="font-weight:bolder;"><p style="text-align:center;color: #005d72;">Top Ten Events Calicut</p> </h2>
+                              <img class="object" src="images/events.jpg" style="width: 700px;height:500px;"alt="Smiley face">
+                           <!-- </a>
+                          </div>
+                  <div class="media-body">
+                        <h2 class="media-heading" style="font-weight:bolder;"><p style="text-align:center">Ten Events Calicut</p> </h2>
+                 </div>
+                  
+              </div>-->
+          </div>
+          
+              <div class="col-lg-2">
+                    <nav  style="background-color:#cbeaf1; align-items: center" >
+                        <h4 style="font-weight:bolder" align:justify><p  style="text-align:center;color: #005d72;">Training Categories</p></h4>
+                        <ul class="nav nav-divibar nav-stacked" >
+
+                            <%  for (var image of images_ctgs) { %>
+                              <li style="text-align:center"><img class="img1p" src=<%=image.link%> width=80px height=80px>
+                                <br /><%=image.title%></li>
+                          <% } %> 
+                            
+                        </ul>
+                      </nav>
+                    </div>
+        </div>
+        
+        </div> 
+
+        <footer style="padding-bottom:20px;bottom:0;width:100%;display:block;background-color:darkgrey">
+          <% include ./footer %>
+        </footer>
+
+  <!--<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>   -->   
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>
